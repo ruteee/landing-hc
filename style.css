@@ -1,62 +1,159 @@
-nav a{
-    margin: 0;
-    padding-left:12%;
-    padding-right:12%;
-    border: 2px solid;
-    text-align: center;
-    color: black;
-    display: inline;
+body{
+    width: 100%;
+ font-size: 25px;
+    
 }
-nav {
-    display: inline;
+
+body h1.title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin:0;
+}
+
+div.nav {
+    display:flex;
+    background-color: #1e88e5;
+    overflow: auto;
+    width: 100%;
+}
+
+div.nav a{
+    padding: 20px;
+    float: left;
+    text-align: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    text-decoration: none;
+    width: 25%;
+}
+
+
+div.nav a:hover {
+    background-color: #90caf9;
+    color: black;
+
 }
 
 #contato, #saiba, #about{
-    height: 800px;
-    border: solid;
+    height: 400px;
+
 }
 
 #home div.layoutHome{
-    height: 800px;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    margin:0;
 }
-#home div div.noticias{
-    background-color: aqua;
-    width: 97%;
+#home div.noticias{
+    font-size: 18px;
+    padding: 6px;
+    height: 100%;
+
+    width: calc(90% - 14px);
+    overflow-x: hidden;
+
+    scrollbar-width: none;
+    display: inline-block;
+
+    background-color: white;
 }
 
-#home div div.btnLft {
-    float: left;
-    width: 1.5%;
-    height: 100%;
+.buttons{
+    text-align: center;
+}
+
+#home div.btnLft {
+    /* float: left; */
+    /* width: 5%; */
+    display:inline-block;
+    
+/**other codes**/
  
 }
 
 #home div div.btnRt{
-    float: right;
-    width: 1.5%;
-    height: 100%;
+    /* float: right; */
+    /* width: 5%; */
+    display:inline-block;
+
+
 }
 
 #home div div.btnLft button{
     float: left;
-    height: 100%;
-    width: 100%;
+    width: 300px;
+    height: 70px;
+    opacity: 0.7;
 }
 
 #home div div.btnRt button{
     float: right;
-    height: 100%;
-    width: 100%;
+    width: 300px;
+    height: 70px;
+    opacity: 0.7;
 }
 
 
 
-#home div .noticias{
-    width: 90%;
-    height: 100%;
-    display: inline-block;
-    font-size: 25px;
-}
+
 .invisible{
     display: none;
+}
+
+#noticia1 h1{
+    font-size: 50px;
+}
+
+
+#noticia1{
+    text-align: center;
+
+}
+#noticia1 img{
+    width: 800px;
+    height: 1000px;
+ 
+}
+
+#noticia1 p{
+    text-align: justify;
+    font-size: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  
+}
+
+#noticia2 p{
+    text-align: justify;
+    font-size: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  
+}
+
+#noticia2 iframe{
+    text-align: center;
+}
+
+#about {
+    background-color: white;
+    color: black;
+}
+
+#about p{
+    padding-right: 200px;
+   
+}
+
+#about h1{
+    text-align: center;
+    padding-top:15px;
+}
+
+#about img{
+    width: 300;
+    height: 300px;
+    padding-right: 30px;
 }
