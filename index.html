@@ -10,41 +10,108 @@
             <a href="#home"> Home</a>
             <a href="#about"> Sobre</a>
             <a href="#contato"> Contato</a>
-            <a href="#saibamais"> Saiba Mais</a>
-
+            <a href="#saiba"> Saiba Mais</a>
 
         </nav>
 
         <div id="home">
-            This is the home page
-            <div class="noticias">
-                teste com noticias textuais
-                <button id="btnNoticia" onclick="addClass()">
-                    >
-                </button>
-            </div>
-            
+                This is the home page
+            <div class="layoutHome">
+                
+                <div class="btnLft">
+                    <button id="btnLft" onclick="btnLft()">
+                            <
+                    </button>
+                </div>
+                
+                <div class="noticias">            
+                    
+                    <div id="noticia1">
+                            Em uma semana, as mortes confirmadas por covid-19 dobraram no país. Levantamento feito pelo UOL com base em números oficiais divulgados pelo Ministério da Saúde apontou 1.223 óbitos nos últimos sete dias. O índice representa 52% das 2.347 mortes divulgadas pelo governo federal. Nas últimas 24 horas, foram registradas 206 mortes no Brasil, segundo o Ministério da Saúde. Para especialistas ouvidos pela reportagem, a situação vai se agravar nos próximos dias.... - Veja mais em https://noticias.uol.com.br/saude/ultimas-noticias/redacao/2020/04/18/em-uma-semana-mortes-por-covid-dobram-no-brasil-vai-piorar-diz-medica.htm?cmpid=copiaecola
+                    </div>
 
-            
+                    <div id="noticia2" class=invisible>
+                        div2
+                    
+                    </div>
 
-            <div id="noticia2">
-                div2
-            </div>
+                    <div id="noticia3" class=invisible>
+                            div3
+                        
+                    </div>
 
+                    <div id="noticia4" class=invisible>
+                            div4
+                        
+                        </div>
+
+
+                    <div id="noticia5" class=invisible>
+                            div5
+                        
+                    </div>
+
+
+                    <div id="noticia6" class=invisible>
+                            div6
+                        
+                    </div>                
+                </div>
+
+                <div class="btnRt">
+                    <button id="btnNoticiaRt" onclick="btnRgt()">
+                            >
+                    </button>
+                </div>
+                
             <div>
 
-            </div>
+        </div>
 
+    
         </div>
 
         <div id="about">
             This is about me!
         </div>
 
-        <script> 
-            function addClass({
-                var n2 = document.getElementById("noticia2");
-            })
+
+        <div id="contato">
+                Contato
+        </div>
+
+
+        <div id="saiba">
+                Saiba mais
+        </div>
+
+        <script type="text/javascript"> 
+            var countRt = 1;
+            function btnRgt(){
+
+                document.getElementById("noticia"+countRt).classList.add("invisible");
+                if (countRt < 6){
+                    countRt++;
+                }else{
+                    countRt = 1;  
+                }
+                document.getElementById("noticia"+countRt).classList.remove("invisible");
+                
+                
+            }
+
+            function btnLft(){
+
+                document.getElementById("noticia"+countRt).classList.add("invisible");
+                if (countRt > 1){
+                    countRt--;
+                }else{
+                    countRt = 6;  
+                }
+                document.getElementById("noticia"+countRt).classList.remove("invisible");
+                
+                
+            }
         </script>
 
     </body>

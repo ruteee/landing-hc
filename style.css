@@ -1,14 +1,62 @@
-#home .noticias{
+nav a{
+    margin: 0;
+    padding-left:12%;
+    padding-right:12%;
+    border: 2px solid;
+    text-align: center;
+    color: black;
+    display: inline;
+}
+nav {
+    display: inline;
+}
+
+#contato, #saiba, #about{
+    height: 800px;
+    border: solid;
+}
+
+#home div.layoutHome{
+    height: 800px;
+}
+#home div div.noticias{
     background-color: aqua;
-    width: 100%;
-    height: 500px;
+    width: 97%;
 }
 
-#home button{
+#home div div.btnLft {
+    float: left;
+    width: 1.5%;
+    height: 100%;
+ 
+}
+
+#home div div.btnRt{
     float: right;
-    height: 500px;
+    width: 1.5%;
+    height: 100%;
 }
 
+#home div div.btnLft button{
+    float: left;
+    height: 100%;
+    width: 100%;
+}
+
+#home div div.btnRt button{
+    float: right;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+#home div .noticias{
+    width: 90%;
+    height: 100%;
+    display: inline-block;
+    font-size: 25px;
+}
 .invisible{
     display: none;
 }
